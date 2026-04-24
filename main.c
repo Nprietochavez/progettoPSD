@@ -15,6 +15,7 @@ int main()
         printf("3. Cerca per ID\n");
         printf("4. cambia stato\n");
         printf("5. Elimina segnalazione\n");
+        printf("6. Filtra per stato\n");
         printf("0. Esci\n");
         printf("opcion:\n ");
         scanf("%d", &scelta);
@@ -36,7 +37,6 @@ int main()
         case 4:
         {
             cambiaStato(lista,count);
-           
             break;
         }
 
@@ -44,6 +44,9 @@ int main()
             eliminaSegnalazione(lista,&count);
             break;
         }
+        case 6:
+            filtraPerStato(lista,count);
+            break;
         case 0:
             printf("\nSalir");
             break;

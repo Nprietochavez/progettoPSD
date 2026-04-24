@@ -18,5 +18,6 @@ void cercaPerID(Segnalazione lista[], int count);
 void cambiaStato(Segnalazione lista[], int count);
 void eliminaSegnalazione(Segnalazione lista[], int *count);
 void stampaSegnalazione(Segnalazione s);
+void filtraPerStato(Segnalazione lista[], int count);
 
 #endif

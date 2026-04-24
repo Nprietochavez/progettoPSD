@@ -130,3 +130,22 @@ void eliminaSegnalazione(Segnalazione lista[],int *count){
                 printf("Segnalazione non trovata\n");
             }
 }
+
+void filtraPerStato(Segnalazione lista[], int count){
+
+    int stato;
+    int trovato=0;
+
+    printf("Inserisci stato da filtrare (0 aperta, 1 in lavorazione, 2 chiusa)");
+    scanf("%d", &stato);
+
+    for(int i =0; i<count; i++){
+        if(lista[i].stato==stato){
+            stampaSegnalazione(lista[i]);
+            trovato=1;
+        }
+    }
+    if(!trovato){
+        printf("Nessuna segnalazione trovata\n");
+    }
+}
